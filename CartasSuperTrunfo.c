@@ -57,7 +57,7 @@ int main(){
 
     printf("\nCarta 1:\n");
     printf("código: %s\n", codigo1);
-    printf("Popilação: %d\n", população1);
+    printf("População: %d\n", populacao1);
     printf("PIB: %.2f bilhões\n", pib1);
     printf("Pontos Turísticos: %d\n", pontos_turisticos1);
 
