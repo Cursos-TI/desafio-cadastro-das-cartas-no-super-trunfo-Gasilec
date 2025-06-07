@@ -13,7 +13,14 @@ int main(){
     int populacao2;
     float area2;
     float pib2;
-    int pontos_turisticos2;   
+    int pontos_turisticos2;
+    
+    // Variáveis de calculo
+    float densidade1;
+    float pibpercapita1;
+
+    float densidade2;
+    float pibpercapita2;
 
     // Cadastro da primeira carta
     printf("Cadastro da carta 1:\n");
@@ -52,6 +59,13 @@ int main(){
     printf("Número de pontos turísticos: ");
     scanf("%d", &pontos_turisticos2);
 
+    //Cálculo das variáveis
+    densidade1 = populacao1 / area1;
+    pibpercapita1 = pib1 * 1000000000 / populacao1;
+
+    densidade2 = populacao2 / area2;
+    pibpercapita2 = pib2 * 1000000000 / populacao2;
+
     // Mostrar os dados das cartas
     printf("\nCartas do SUPER TRUNFO\n");
 
@@ -60,12 +74,16 @@ int main(){
     printf("População: %d\n", populacao1);
     printf("PIB: %.2f bilhões\n", pib1);
     printf("Pontos Turísticos: %d\n", pontos_turisticos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f\n", pibpercapita1);
 
     printf("\nCarta 2:\n");
     printf("código: %s\n", codigo2);
     printf("População: %d\n", populacao2);
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Pontos Turísticos: %d\n", pontos_turisticos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2f\n", pibpercapita2);
 
     return 0;
 
